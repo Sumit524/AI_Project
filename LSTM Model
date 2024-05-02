@@ -1,0 +1,79 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0eba1ea3-fd3d-44fb-b370-2373851e5f46",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "import pandas as pd\n",
+    "import matplotlib.pyplot as plt\n",
+    "import pandas_datareader as data"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "93b86167-e887-4ee9-9e9c-e63f29cb0498",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'data' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[1;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[1;32mIn[11], line 3\u001b[0m\n\u001b[0;32m      1\u001b[0m start \u001b[38;5;241m=\u001b[39m \u001b[38;5;124m'\u001b[39m\u001b[38;5;124m2010-01-01\u001b[39m\u001b[38;5;124m'\u001b[39m\n\u001b[0;32m      2\u001b[0m end \u001b[38;5;241m=\u001b[39m \u001b[38;5;124m'\u001b[39m\u001b[38;5;124m2019-12-31\u001b[39m\u001b[38;5;124m'\u001b[39m\n\u001b[1;32m----> 3\u001b[0m df \u001b[38;5;241m=\u001b[39m data\u001b[38;5;241m.\u001b[39mDataReader(\u001b[38;5;124m'\u001b[39m\u001b[38;5;124mAAPL\u001b[39m\u001b[38;5;124m'\u001b[39m, \u001b[38;5;124m'\u001b[39m\u001b[38;5;124myahoo\u001b[39m\u001b[38;5;124m'\u001b[39m, start, end)\n\u001b[0;32m      4\u001b[0m df\u001b[38;5;241m.\u001b[39mhead()\n",
+      "\u001b[1;31mNameError\u001b[0m: name 'data' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "start = '2010-01-01'\n",
+    "end = '2019-12-31'\n",
+    "df = data.DataReader('AAPL', 'yahoo', start, end)\n",
+    "df.head()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a6fc1354-14e3-40d8-a8af-a2a8eaf096f7",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "17294930-748b-407f-9b98-47887c1f7297",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
